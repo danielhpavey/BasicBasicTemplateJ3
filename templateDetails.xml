@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+        version="2"
+        type="template"
+        client="site">
+        <name>BasicBasicJ3</name>
+        <creationDate>2014-02-13</creationDate>
+        <author>Daniel H Pavey</author>
+        <authorEmail>dan@eastdevon.it</authorEmail>
+        <authorUrl>http://www.eastdevonit.co.uk</authorUrl>
+        <copyright>East Devon IT</copyright>
+        <license>GNU/GPL</license>
+        <version>2</version>
+        <description>Joomla 3 Basic Template</description>
+        <files>
+                <folder>css</folder>
+                <folder>images</folder>
+                <folder>html</folder>
+                <folder>js</folder>
+                <filename>index.php</filename>
+                <filename>component.php</filename>
+                <filename>templateDetails.xml</filename>
+                <filename>index.html</filename>
+        </files>
+        <positions>
+		<position>header</position>
+                <position>breadcrumb</position>
+                <position>left</position>
+                <position>right</position>
+                <position>nav</position>
+                <position>top</position>
+                <position>bottom</position>
+                <position>footer</position>
+                <position>user1</position>
+                <position>user2</position>
+                <position>user3</position>
+                <position>user4</position>
+        </positions>
+</extension>
