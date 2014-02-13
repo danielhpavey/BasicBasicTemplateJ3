@@ -2,18 +2,16 @@
 // Remove generator meta tag
 $this->setGenerator(null);
 // Remove most of the Javascript from the head
-unset($this->_scripts[JURI::root(true).'/media/system/js/mootools-core.js']);
-unset($this->_scripts[JURI::root(true).'/media/system/js/mootools-more.js']);
-unset($this->_scripts[JURI::root(true).'/media/system/js/core.js']);
 unset($this->_scripts[JURI::root(true).'/media/system/js/caption.js']);
-if (isset($this->_script['text/javascript']))
-{
-    $this->_script['text/javascript'] = preg_replace('%window\.addEvent\(\'load\',\s*function\(\)\s*{\s*new\s*JCaption\(\'img.caption\'\);\s*}\);\s*%', '', $this->_script['text/javascript']);
+unset($this->_scripts[JURI::root(true).'/media/jui/js/jquery.min.js']);
+unset($this->_scripts[JURI::root(true).'/media/jui/js/jquery-noconflict.js']);
+unset($this->_scripts[JURI::root(true).'/media/jui/js/jquery-migrate.min.js']);
+unset($this->_scripts[JURI::root(true).'/media/system/js/tabs-state.js']);
+if (isset($this->_script['text/javascript'])){
+    $this->_script['text/javascript'] = preg_replace('%window)\.on\(\'load\',\s*function\(\)\s*{\s*new\s*JCaption\(\'img.caption\'\);\s*}\);\s*%', '', $this->_script['text/javascript']);
     if (empty($this->_script['text/javascript']))
         unset($this->_script['text/javascript']);
 }
-
-
 
 ?>
 <!DOCTYPE html >
